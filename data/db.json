@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "name": "hii",
+      "price": "1700",
+	  "slug": "hii",
+	  "image":"/bg1.jpg",
+	  "category":"ayur"
+    },
+	{
+      "id": 2,
+      "name": "hii",
+      "price": "1700",
+	  "slug": "hii2",
+	  "image":"/favicon.ico",
+	  "category":"ayur"
+    },
+	{
+      "id": 3,
+      "name": "hii",
+      "price": "1700",
+	  "slug": "hii3",
+	  "image":"/bg1.jpg",
+	  "category":"ayuredge"
+    },
+	{
+      "id": 4,
+      "name": "hii",
+      "price": "1700",
+	  "slug": "sanskar",
+	  "image":"/bg1.jpg",
+	  "category":"real"
+    },
+	{
+      "id": 5,
+      "name": "hii",
+      "price": "1700",
+	  "slug": "sanskar",
+	  "image":"/bg1.jpg",
+	  "category":"real"
+    },
+	{
+      "id": 6,
+      "name": "hii",
+      "price": "1700",
+	  "slug": "sanskar",
+	  "image":"/bg1.jpg",
+	  "category":"real"
+    },
+	{
+      "id": 7,
+      "name": "hii",
+      "price": "1700",
+	  "slug": "sanskar",
+	  "image":"/bg1.jpg",
+	  "category":"real"
+    }
+  ]

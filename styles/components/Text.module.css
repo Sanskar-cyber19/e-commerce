@@ -1,0 +1,19 @@
+.input{
+	border:none;
+	outline:none;
+	font-size:2vh;
+	padding: 0rem 0.5rem;
+	width:100%;
+}
+
+.form{
+	border-bottom: 2px solid var(--buyButton);
+	border-radius:10px;
+	display:flex;
+	margin:20px auto;
+}
+
+.form span{
+	padding:0.5rem 1rem;
+	color:var(--buyButton);
+}

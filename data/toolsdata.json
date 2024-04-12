@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "firstName": "Sanskar",
+    "lastName": "Bandgar",
+    "email": "fg9084752007@gmail.com",
+    "address1": "at post baramati",
+    "address2": "",
+    "state": "Maharestra",
+    "pinCode": "413102",
+    "upi": "413102",
+    "cart": []
+  },
+  {
+    "id": 2,
+    "firstName": "hii",
+    "lastName": "Bandgar",
+    "email": "fg9084752007@gmail.com",
+    "address1": "at post baramati",
+    "address2": "",
+    "state": "Maharestra",
+    "pinCode": "413102",
+    "upi": "413102",
+    "cart": []
+  },
+  {
+    "id": 3,
+    "firstName": "Ryan ",
+    "lastName": "Cuvkbyc",
+    "email": "fhcucv@gmail.com",
+    "address1": "Jdudmsp",
+    "address2": "Jeoan",
+    "state": "Maharestra",
+    "pinCode": "27191",
+    "upi": "Gdkanahian",
+    "cart": [
+      {
+        "id": 1,
+        "name": "hii",
+        "qunanity": 1,
+        "price": "1700",
+        "amount": 1700
+      },
+      {
+        "id": 2,
+        "name": "hii",
+        "qunanity": 1,
+        "price": "1700",
+        "amount": 1700
+      },
+      {
+        "id": 3,
+        "name": "hii",
+        "qunanity": 1,
+        "price": "1700",
+        "amount": 1700
+      }
+    ]
+  }
+]

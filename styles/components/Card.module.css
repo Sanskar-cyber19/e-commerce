@@ -1,0 +1,31 @@
+.main{
+	padding:0.5rem 0.8rem;
+	width:100%;
+	text-align:center;
+	box-shadow:var(--box-shadow)
+}
+
+.buttons{
+	display:flex;
+	gap:10px;
+}
+
+.buy{
+	background-color:var(--buyButton);
+	border:none;
+	border-radius:5px;
+	padding:0.7rem 3rem;
+	color:var(--white);
+}
+
+.cart{
+	background-color:none;
+	border:2px solid var(--buyButton);
+	border-radius:5px;
+	padding:0.7rem 1.5rem;
+}
+
+.line{
+	text-decoration: line-through;
+	font-size:0.7rem;
+}

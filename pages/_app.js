@@ -8,11 +8,6 @@ import '@/styles/bootstrap.min.css'
 import { SessionProvider } from 'next-auth/react'
 
 export default function App({ Component, pageProps }) {
-	useEffect(() => {
-	if(typeof window !== "undefined"){
-		require('bootstrap/dist/js/bootstrap.min.js')
-	}
-},[])
   return (
     <>
     <Head>

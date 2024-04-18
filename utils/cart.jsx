@@ -22,12 +22,12 @@ export function addToCart(id,name,qunanity,price){
 		Router.push('/login')
 	}else{
 	const amount = qunanity * price;
-	total = total + amount;
 	const exist = cart.find(product => product.id === id);
 	if(exist){
 		alert('Remove product from cart and reselect with Quantity')
 	}else{
 		cart.push({id,name,qunanity,price,amount});
+    total = total + amount;
 		console.log(cart);
 	}
 	return cart;

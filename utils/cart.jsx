@@ -18,6 +18,7 @@ export function addToCart(product,qunanity){
 	/*const userName = getName();
 	if(userName === ''){
 		Router.push('/login')
+<<<<<<< HEAD
 	}else{*/
 		const price = product.Price
 		const slug = product.slug
@@ -26,13 +27,23 @@ export function addToCart(product,qunanity){
 		}
 	const exist = cart.find(product => product.slug === slug);
 	 console.log(exist)
+=======
+	}else{
+	const amount = qunanity * price;
+	const exist = cart.find(product => product.id === id);
+>>>>>>> 031f04897ded3948049374998e3ac7ae1d36bc8e
 	if(exist){
 		console.log('working')
 	}else{
+<<<<<<< HEAD
 		const amount = qunanity * price;
 		const index = cart.length + 1;
 		total = total + amount;
 		cart.push({index,product,qunanity,amount});
+=======
+		cart.push({id,name,qunanity,price,amount});
+    total = total + amount;
+>>>>>>> 031f04897ded3948049374998e3ac7ae1d36bc8e
 		console.log(cart);
 	}
 	return cart;

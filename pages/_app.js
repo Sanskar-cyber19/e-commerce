@@ -8,7 +8,10 @@ import '@/styles/bootstrap.min.css'
 import { SessionProvider } from 'next-auth/react'
 
 export default function App({ Component, pageProps }) {
+<<<<<<< HEAD
 	
+=======
+>>>>>>> 031f04897ded3948049374998e3ac7ae1d36bc8e
   return (
     <>
     <Head>

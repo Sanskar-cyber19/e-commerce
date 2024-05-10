@@ -5,7 +5,8 @@
       "price": "1700",
 	  "slug": "hii",
 	  "image":"/bg1.jpg",
-	  "category":"ayur"
+	  "category":"ayur",
+	  "deatail":"deatail ksjhbcjb csjuc mcusd cy csjyb dcyucm mcu saxyu cxyjb mcyc c u "
     },
 	{
       "id": 2,
@@ -27,7 +28,7 @@
       "id": 4,
       "name": "hii",
       "price": "1700",
-	  "slug": "sanskar",
+	  "slug": "sanskar65",
 	  "image":"/bg1.jpg",
 	  "category":"real"
     },
@@ -35,7 +36,7 @@
       "id": 5,
       "name": "hii",
       "price": "1700",
-	  "slug": "sanskar",
+	  "slug": "sanskar4",
 	  "image":"/bg1.jpg",
 	  "category":"real"
     },
@@ -43,7 +44,7 @@
       "id": 6,
       "name": "hii",
       "price": "1700",
-	  "slug": "sanskar",
+	  "slug": "sanskar2",
 	  "image":"/bg1.jpg",
 	  "category":"real"
     },

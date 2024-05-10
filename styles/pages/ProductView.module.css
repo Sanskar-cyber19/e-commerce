@@ -1,0 +1,40 @@
+.main{
+	padding:0rem 15rem;
+}
+
+.body{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+}
+
+.tax{
+	color:var(--gray);
+}
+
+.buy{
+	padding:0.4rem 7rem;
+	color:var(--white);
+	border:none;
+	border-radius:100px;
+	background-color:var(--buyButton);
+}
+
+.cart{
+	margin:10px 0px;
+	padding:0.4rem 6.5rem;
+	color:var(--black);
+	border:2px solid var(--buyButton);
+	border-radius:100px;
+	background-color:none;
+}
+
+.qunanity{
+	margin:10px 0px;
+	display:flex;
+	width:150px;
+	border-radius:100px;
+	justify-content:center;
+	gap:30px;
+	background-color:#f0f0f0;
+	padding:0.2rem 1rem
+}

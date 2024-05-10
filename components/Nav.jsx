@@ -9,21 +9,6 @@ import { getName, getEmail, getStatus } from '@/utils/user'
 export default function Navbar(){
 	const Router = useRouter();
 	const logo = '/favicon.ico';
-		const [name,setName] = useState('');
-	const [email,setEmail] = useState('');
-	const [status,setStatus] = useState(false);
-	const tick = () =>{
-	setName(getName());
-	setEmail(getEmail());
-	setStatus(getStatus());
-	}
-	const login = (query) => {
-		Router.push(query)
-	}
-	useEffect(()=>{
-		const timerID = setInterval(() => tick(), 1000);
-		return () => clearInterval(timerID);
-	},[])
     return(
         <>
             <nav className={style.nav}>
@@ -57,17 +42,6 @@ export default function Navbar(){
 						<span className={style.text}>Profile</span>
                     </Link>
                 </div>
-				{
-					status ? 
-					<div className={style.button}>
-						<button onClick={()=>login('/login')} className={style.login}>Login</button>
-						<button onClick={()=>login('/signup')} className={style.signup}>Sign Up</button>
-					</div> : 
-					<Link href="/profile" className={style.name}>
-						<div>{name}<br/>{email}</div>
-						<div className={style.user}><i className="fa fa-user fa-lg"></i></div>
-					</Link>
-				}
             </nav>
         </>
   );

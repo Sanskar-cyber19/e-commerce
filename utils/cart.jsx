@@ -14,24 +14,28 @@ export function getCount(){
 	return count;
 }
 
-export function addToCart(id,name,qunanity,price){
-	const userName = getName();
-	console.log(userName);
+export function addToCart(product,qunanity){
+	/*const userName = getName();
 	if(userName === ''){
-		alert('login')
 		Router.push('/login')
-	}else{
-	const amount = qunanity * price;
-	total = total + amount;
-	const exist = cart.find(product => product.id === id);
+	}else{*/
+		const price = product.Price
+		const slug = product.slug
+		if(qunanity === undefined){
+			qunanity = 1;
+		}
+	const exist = cart.find(product => product.slug === slug);
+	 console.log(exist)
 	if(exist){
-		alert('Remove product from cart and reselect with Quantity')
+		console.log('working')
 	}else{
-		cart.push({id,name,qunanity,price,amount});
+		const amount = qunanity * price;
+		const index = cart.length + 1;
+		total = total + amount;
+		cart.push({index,product,qunanity,amount});
 		console.log(cart);
 	}
 	return cart;
-	}
 }
 
 export function removeItem(id){

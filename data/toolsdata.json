@@ -56,5 +56,29 @@
         "amount": 1700
       }
     ]
+  },
+  {
+    "id": 4,
+    "firstName": "hii",
+    "lastName": "Bandgar",
+    "email": "fg9084752007@gmail.com",
+    "address1": "at post baramati",
+    "address2": "",
+    "state": "Maharestra",
+    "pinCode": "413102",
+    "upi": "413102",
+    "cart": []
+  },
+  {
+    "id": 5,
+    "firstName": "hii",
+    "lastName": "Bandgar",
+    "email": "fg9084752007@gmail.com",
+    "address1": "at post baramati",
+    "address2": "",
+    "state": "Maharestra",
+    "pinCode": "413102",
+    "upi": "",
+    "cart": []
   }
 ]

@@ -11,7 +11,7 @@ export default function handler(req,res){
 	);
 	
 	if (user) {
-    return res.status(200).json({name:user.name,email:user.email,orders:user.orders });
+    return res.status(200).json({name:user.name,email:user.email,orders:user.orders,password:user.password });
   } else {
     return res.status(401).json({ message: 'Invalid credentials' });
   }

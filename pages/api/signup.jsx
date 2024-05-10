@@ -13,7 +13,7 @@ const { name, email, password } = req.body;
 	  
 	  if(user){
 		  return res.status(401).json({ message: 'Invalid credentials' })
-	  }
+	  }else{
 		  const newUser = {
 			  id:data.length + 1,
 			  name,
@@ -26,4 +26,5 @@ const { name, email, password } = req.body;
 		fs.writeFileSync(UserFilePath, JSON.stringify(Order, null,2));
 	
 		return res.status(201).json({ message:'order plced'});
+}
 }

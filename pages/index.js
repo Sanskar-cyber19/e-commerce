@@ -5,25 +5,15 @@ import Link from 'next/link'
 import { getQuantity, addToCart, clearCart } from "@/utils/cart"
 import Carousel from '@/components/Carousel'
 import Text from '@/components/Text'
-import { getProduct,getAllCategory } from '@/utils/product'
 import { FaClock } from 'react-icons/fa'
 
 export default function Home() {
-	const [category, setCategory] = useState([]);
-	useEffect(()=>{
-		setCategory(getAllCategory());
-	},[])
   return (
     <main className={style.grid}>
 		<Carousel />
 			<center className="py-3"><h3>Categorys</h3></center>
 		<div className={style.categorys}>
-			{category.map((cat) => (
-				<div key={cat.id} className={style.category}>
-				<Image src="/favicon.ico" width={80} height={80} className={style.catimage}/><br/>
-					<h5>{cat.name}</h5>
-				</div>
-			))}
+			
 		</div>
 		<div className="container col-xxl-8 px-4 py-5">
 			<div className="row flex-lg-row-reverse align-items-center g-5 py-5">

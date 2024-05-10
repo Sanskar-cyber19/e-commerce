@@ -19,7 +19,7 @@
       "id": 2,
       "name": "sanskar",
 	  "password":"123",
-      "email":"bandgar@gmail.com",
+      "email":"bandgars@gmail.com",
 	  "orders":[
 			{
 				"id":1,
@@ -67,7 +67,7 @@
       "id": 4,
       "name": "vinod",
 	  "password":"123",
-      "email":"bandgar@gmail.com",
+      "email":"bandgarv@gmail.com",
 	  "orders":[
 			{
 				"id":1,

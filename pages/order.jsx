@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Router from 'next/router';
-import { getCart, addToCart, clearCart, removeItem } from "@/utils/cart"
+import { getCart, addToCart, getTotal, removeItem } from "@/utils/cart"
 
 export default function cart () {
 	const [firstName, setFirstName] = useState('');
@@ -10,7 +10,6 @@ export default function cart () {
 	const [address2, setAddress2] = useState('');
 	const [state, setState] = useState('');
 	const [pinCode, setPinCode] = useState('');
-	const [upi, setUpi] = useState('');
 	const [cart, setCart] = useState([]);
 	const [finalt,setFinalt] = useState(0)
 	
@@ -43,8 +42,8 @@ export default function cart () {
 		setCart(getCart());
 	}
 	return(
-		<>
-		<main className="row g-5">
+		<main className="p-5">
+		<div className="row g-5">
 		<div className="col-md-5 col-lg-4 order-md-last">
         <h4 className="d-flex justify-content-between align-items-center mb-3">
           <span className="text-primary">Your cart</span>
@@ -54,15 +53,15 @@ export default function cart () {
 		<li key={product.id} className="list-group-item d-flex justify-content-between lh-sm">
             <div>
               <h6 className="my-0">{product.name}</h6>
-              <small className="text-muted">Quantity:{product.quantity}</small>
+              <small className="text-muted">Quantity:{product.qunanity}</small>
             </div>
             <span className="text-muted">${product.amount}</span>
-		  <span className="fa fa-box-open" onClick={() => remove(product.id)}></span>
+		  <span className="fa fa-box-open" onClick={() => remove(product.id)}>gihh</span>
           </li> 
 		))}
           <li className="list-group-item d-flex justify-content-between">
             <span>Total (USD)</span>
-            <strong>{finalt}</strong>
+            <strong>{getTotal()}</strong>
           </li>
         </ul>
       </div>
@@ -133,22 +132,10 @@ export default function cart () {
 
           <hr className="my-4"/>
 
-          <h4 className="mb-3">Payment</h4>
-
-          <div className="col-md-3">
-              <label for="upi" className="form-label">UPI Id</label>
-              <input type="text" className="form-control" id="zip" placeholder="" value={upi} onChange={(e) => setUpi(e.target.value)} required/>
-              <div className="invalid-feedback">
-                Zip code required.
-              </div>
-            </div>
-
-          <hr className="my-4"/>
-
           <button className="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
         </form>
       </div>
-	  </main>
-		</>
+	  </div>
+		</main>
 	)
 }
